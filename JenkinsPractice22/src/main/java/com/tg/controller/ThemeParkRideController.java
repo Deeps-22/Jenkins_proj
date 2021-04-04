@@ -31,6 +31,7 @@ public class ThemeParkRideController {
         return themeParkRideRepository.save(themeParkRide);
     }
 
+    
 @DeleteMapping(value = "/ride/{id}")
     public void deleteRide(@PathVariable long id){
         themeParkRideRepository.deleteById(id);
